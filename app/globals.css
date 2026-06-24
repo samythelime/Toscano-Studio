@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-cormorant);
+}
+
+:root {
+  --bg:        #0a1628;
+  --surface:   #0d1f35;
+  --border:    rgba(0, 201, 177, 0.08);
+  --teal:      #00C9B1;
+  --seafoam:   #4ECDC4;
+  --coral:     #FF6B6B;
+  --text:      #F0FFFC;
+  --muted:     #6a9e9a;
+  --muted-2:   #8bbdb9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  cursor: none !important;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans), 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: var(--font-display), 'Cormorant Garamond', serif;
+}
+
+.field {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  padding: 0.875rem 0;
+  color: var(--text);
+  font-size: 0.9375rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.field::placeholder {
+  color: var(--muted);
+}
+.field:focus {
+  border-bottom-color: var(--teal);
+}
+textarea.field {
+  resize: none;
+}
