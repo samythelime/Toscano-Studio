@@ -66,6 +66,33 @@ export default function ContactForm() {
       </div>
 
       <div>
+        <label htmlFor="email" className="block text-[#a08060] text-xs font-semibold uppercase tracking-widest mb-1">
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          placeholder="john@smithplumbing.com"
+          className="field"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="phone" className="block text-[#a08060] text-xs font-semibold uppercase tracking-widest mb-1">
+          Phone number
+        </label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          placeholder="(555) 123-4567"
+          className="field"
+        />
+      </div>
+
+      <div>
         <label htmlFor="business" className="block text-[#a08060] text-xs font-semibold uppercase tracking-widest mb-1">
           Business name
         </label>
